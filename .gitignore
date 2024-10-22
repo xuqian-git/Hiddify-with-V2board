@@ -40,7 +40,14 @@ migrate_working_dir/
 **/*.dll
 **/*.dylib
 **/*.xcframework
+
 /dist/
+
+
+pubspec.lock
+**/*.cc
+
+
 
 /assets/core/*
 !/assets/core/.gitkeep
