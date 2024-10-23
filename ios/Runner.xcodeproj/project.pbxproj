@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -475,15 +475,15 @@
 			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
 			buildPhases = (
 				B971F0749B278D190A7A7315 /* [CP] Check Pods Manifest.lock */,
-				9740EEB61CF901F6004384FC /* Run Script */,
-				97C146EA1CF9000F007C117D /* Sources */,
-				97C146EB1CF9000F007C117D /* Frameworks */,
-				97C146EC1CF9000F007C117D /* Resources */,
 				03E392C12ADDA00F000ADF15 /* Embed Foundation Extensions */,
-				CE1C2E2B2CC7EFA9009AAF9C /* Embed Frameworks */,
-				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
+				9740EEB61CF901F6004384FC /* Run Script */,
+				97C146EC1CF9000F007C117D /* Resources */,
+				97C146EA1CF9000F007C117D /* Sources */,
 				FBEFD3291AEA65EDE2F5AEF6 /* [CP] Embed Pods Frameworks */,
+				97C146EB1CF9000F007C117D /* Frameworks */,
+				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
 				738EC814CF019E6FA6F32C6B /* [CP] Copy Pods Resources */,
+				CE1C2E2B2CC7EFA9009AAF9C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
