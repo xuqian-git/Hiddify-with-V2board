@@ -10,7 +10,7 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.fanyo.buzz</string>
+		<string>group.app.fanyo.buzz</string>
 	</array>
 	<key>com.apple.security.network.client</key>
 	<true/>

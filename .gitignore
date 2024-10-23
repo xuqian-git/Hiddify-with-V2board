@@ -43,7 +43,7 @@ migrate_working_dir/
 
 /dist/
 
-
+Podfile.lock
 pubspec.lock
 **/*.cc
 

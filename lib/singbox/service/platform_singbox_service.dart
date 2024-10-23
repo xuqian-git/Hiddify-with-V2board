@@ -14,7 +14,7 @@ import 'package:hiddify/utils/custom_loggers.dart';
 import 'package:rxdart/rxdart.dart';
 
 class PlatformSingboxService with InfraLogger implements SingboxService {
-  static const channelPrefix = "com.hiddify.app";
+  static const channelPrefix = "app.fanyo.buzz";
 
   static const methodChannel = MethodChannel("$channelPrefix/method");
   static const statusChannel = EventChannel("$channelPrefix/service.status", JSONMethodCodec());
@@ -73,11 +73,20 @@ class PlatformSingboxService with InfraLogger implements SingboxService {
     return TaskEither(
       () async {
         loggy.debug("changing options");
-        await methodChannel.invokeMethod(
-          "change_hiddify_options",
-          jsonEncode(options.toJson()),
-        );
-        return right(unit);
+        try{
+          loggy.debug("options: ${options.toJson()}");
+          await methodChannel.invokeMethod(
+            "change_hiddify_options",
+            jsonEncode(options.toJson()),
+          );
+          return right(unit);
+        }catch(e){
+          print("Error calling change_hiddify_options: $e");
+          if (e is PlatformException) {
+
+          }
+          rethrow;
+        }
       },
     );
   }

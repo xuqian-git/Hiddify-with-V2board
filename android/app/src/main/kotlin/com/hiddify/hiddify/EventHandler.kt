@@ -12,8 +12,8 @@ class EventHandler : FlutterPlugin {
 
     companion object {
         const val TAG = "A/EventHandler"
-        const val SERVICE_STATUS = "com.hiddify.app/service.status"
-        const val SERVICE_ALERTS = "com.hiddify.app/service.alerts"
+        const val SERVICE_STATUS = "app.fanyo.buzz/service.status"
+        const val SERVICE_ALERTS = "app.fanyo.buzz/service.alerts"
     }
 
     private var statusChannel: EventChannel? = null

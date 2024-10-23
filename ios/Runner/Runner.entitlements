@@ -12,7 +12,7 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.$(BASE_BUNDLE_IDENTIFIER)</string>
+		<string>group.fanyo.buzz</string>
 	</array>
 	<key>com.apple.security.network.client</key>
 	<true/>

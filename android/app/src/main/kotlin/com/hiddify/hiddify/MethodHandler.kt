@@ -21,7 +21,7 @@ class MethodHandler(private val scope: CoroutineScope) : FlutterPlugin,
 
     companion object {
         const val TAG = "A/MethodHandler"
-        const val channelName = "com.hiddify.app/method"
+        const val channelName = "app.fanyo.buzz/method"
 
         enum class Trigger(val method: String) {
             Setup("setup"),

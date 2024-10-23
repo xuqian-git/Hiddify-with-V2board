@@ -16,8 +16,23 @@ public enum FilePath {
 public extension FilePath {
     static let groupName = "group.\(packageName)"
 
-    private static let defaultSharedDirectory: URL! = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: FilePath.groupName)
+//    private static let defaultSharedDirectory: URL! = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: FilePath.groupName)
 
+    
+    private static let defaultSharedDirectory: URL! = {
+        print(FilePath.groupName)
+        let directory = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: FilePath.groupName)
+        
+        if let directory = directory {
+            print("Shared directory: \(directory)")
+        } else {
+            print("Failed to retrieve shared directory for group: \(FilePath.groupName)")
+        }
+
+        return directory
+    }()
+    
+    
     static let sharedDirectory = defaultSharedDirectory!
 
     static let cacheDirectory = sharedDirectory
