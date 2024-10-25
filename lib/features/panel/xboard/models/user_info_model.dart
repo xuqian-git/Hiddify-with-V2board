@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 class UserInfo {
   final String email;
   final double transferEnable;
@@ -12,7 +14,7 @@ class UserInfo {
   final int planId;
   final double? discount; // 允许为 null
   final double? commissionRate; // 允许为 null
-  final String? telegramId; // 允许为 null
+  final int? telegramId; // 允许为 null
   final String uuid;
   final String avatarUrl;
 
@@ -73,7 +75,7 @@ class UserInfo {
       commissionRate: (json['commission_rate'] as num?)?.toDouble(),
 
       // 允许 telegramId 为 null
-      telegramId: json['telegram_id'] as String?,
+      telegramId: json['telegram_id'] as int?,
 
       // uuid 和 avatarUrl，如果为 null 返回空字符串
       uuid: json['uuid'] as String? ?? '',
