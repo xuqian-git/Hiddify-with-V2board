@@ -206,14 +206,3 @@ distributionUrl=https://mirrors.cloud.tencent.com/gradle/gradle-7.6.1-bin.zip
 
 如果你有任何疑问或需要帮助，请随时在 Issue 中提问。我会尽快回复并协助你解决问题。感谢你的支持和贡献！🚀
 
-### 支持本项目
-
-个人开发者不易，如果你觉得本项目对你有帮助，欢迎打赏支持。  
-
-**钱包地址 (USDT-TRC20)：**
-```
-TFPvpxb5k2mYYcvABe5BrCz7Tt6BhnZxxj
-```
-
-
-<img src="images/usdt_trc20.png" alt="USDT TRC20 收款码" width="500"/>
