@@ -5,6 +5,6 @@
 //  Created by GFWFighter on 7/24/1402 AP.
 //
 
-BASE_BUNDLE_IDENTIFIER=app.fanyo.buzz
-SERVICE_IDENTIFIER=app.fanyo.buzz
+BASE_BUNDLE_IDENTIFIER=buzz.fanyo
+SERVICE_IDENTIFIER=buzz.fanyo
 DEVELOPMENT_TEAM=ZFN83ULMTX

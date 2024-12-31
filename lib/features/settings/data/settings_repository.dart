@@ -12,7 +12,7 @@ abstract interface class SettingsRepository {
 class SettingsRepositoryImpl
     with ExceptionHandler, InfraLogger
     implements SettingsRepository {
-  final _methodChannel = const MethodChannel("app.fanyo.buzz/platform");
+  final _methodChannel = const MethodChannel("buzz.fanyo/platform");
 
   @override
   TaskEither<SettingsFailure, bool> isIgnoringBatteryOptimizations() {

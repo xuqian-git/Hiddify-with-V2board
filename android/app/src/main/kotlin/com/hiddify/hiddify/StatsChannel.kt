@@ -11,7 +11,7 @@ import kotlinx.coroutines.CoroutineScope
 class StatsChannel(private val scope: CoroutineScope) : FlutterPlugin, CommandClient.Handler{
     companion object {
         const val TAG = "A/StatsChannel"
-        const val STATS_CHANNEL = "app.fanyo.buzz/stats"
+        const val STATS_CHANNEL = "buzz.fanyo/stats"
     }
 
     private val commandClient =

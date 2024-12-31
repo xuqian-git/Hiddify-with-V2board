@@ -13,7 +13,7 @@ abstract interface class PerAppProxyRepository {
 class PerAppProxyRepositoryImpl
     with InfraLogger
     implements PerAppProxyRepository {
-  final _methodChannel = const MethodChannel("app.fanyo.buzz/platform");
+  final _methodChannel = const MethodChannel("buzz.fanyo/platform");
 
   @override
   TaskEither<String, List<InstalledPackageInfo>> getInstalledPackages() {

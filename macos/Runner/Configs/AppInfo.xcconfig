@@ -8,7 +8,7 @@
 PRODUCT_NAME = fanyo
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = app.fanyo.buzz
+PRODUCT_BUNDLE_IDENTIFIER = buzz.fanyo
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2023 fanyo.buzz. All rights reserved.

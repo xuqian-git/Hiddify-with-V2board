@@ -14,7 +14,7 @@ class ActiveGroupsChannel(private val scope: CoroutineScope) : FlutterPlugin,
     CommandClient.Handler {
     companion object {
         const val TAG = "A/ActiveGroupsChannel"
-        const val CHANNEL = "app.fanyo.buzz/active-groups"
+        const val CHANNEL = "buzz.fanyo/active-groups"
         val gson = Gson()
     }
 

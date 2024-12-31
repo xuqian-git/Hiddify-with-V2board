@@ -21,7 +21,7 @@ class MethodHandler(private val scope: CoroutineScope) : FlutterPlugin,
 
     companion object {
         const val TAG = "A/MethodHandler"
-        const val channelName = "app.fanyo.buzz/method"
+        const val channelName = "buzz.fanyo/method"
 
         enum class Trigger(val method: String) {
             Setup("setup"),
@@ -55,7 +55,7 @@ class MethodHandler(private val scope: CoroutineScope) : FlutterPlugin,
             Trigger.Setup.method -> {
                 GlobalScope.launch {
                     result.runCatching {
-                           val baseDir = Application.application.filesDir                
+                           val baseDir = Application.application.filesDir
                             baseDir.mkdirs()
                             val workingDir = Application.application.getExternalFilesDir(null)
                             workingDir?.mkdirs()
@@ -64,7 +64,7 @@ class MethodHandler(private val scope: CoroutineScope) : FlutterPlugin,
                             Log.d(TAG, "base dir: ${baseDir.path}")
                             Log.d(TAG, "working dir: ${workingDir?.path}")
                             Log.d(TAG, "temp dir: ${tempDir.path}")
-                            
+
                             Mobile.setup(baseDir.path, workingDir?.path, tempDir.path, false)
                             Libbox.redirectStderr(File(workingDir, "stderr2.log").path)
 
